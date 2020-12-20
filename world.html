@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+   	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Our Family</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="bootstrap-4.5.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <style type="text/css">
+
+  	body{
+  		background-color: #65bdc2;
+  	}
+
+  	li {
+    list-style: none;
+	}
+
+header {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #449094;
+	}
+
+
+
+.menu {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.menu ul {
+    width: 100%;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    display: -webkit-flex;     /*Chrome*/
+    display: flex;         /*Spec - Opera, Firefox*/
+}
+
+
+
+.menu ul a {
+    width: 20%;
+    height: inherit;
+    color: white;
+    display: inline-block;
+    font-family: Montserrat;
+}
+.menu ul a:hover {
+    background-color: #222;
+    color: #fff;
+    text-decoration-line: none;
+}
+#menuToggle {
+    display: none;
+}
+.menu-icon {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        width: 100%;
+        height: auto;
+    }
+    .menu ul {
+        display: block;
+        max-height: 0;
+      overflow: hidden;
+      -webkit-transition: max-height 0.3s;
+      -moz-transition: max-height 0.3s;
+        -ms-transition: max-height 0.3s;
+        -o-transition: max-height 0.3s;
+      transition: max-height 0.3s;
+
+    }
+    .menu ul a {
+        text-align: left;
+        width: 100%;
+        height: 50px;
+        background-color: #449094;
+        padding: 10px 0px 10px 5%;
+        color: black !important;
+    }
+    .menu-icon {
+        width: 100px;
+        height: inherit;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: 60px;
+    }
+    #menuToggle:checked ~ ul {
+        max-height: 350px;
+
+    }
+    .menu-icon i {
+        font-size: 1.7em;
+    }
+    .menu ul a:hover {
+    background-color: #222;
+    color: white !important;
+    text-decoration-line: none;
+}
+}
+  </style>
+
+
+   <body>
+   	<header>
+      <nav class="menu">
+            <input type="checkbox" id="menuToggle">
+            <label for="menuToggle" class="menu-icon"><i class="fa fa-bars"></i></label>
+            <ul>
+                <a href="galleria.html"><li>Galleria</li></a>
+                <a href="contact.html"><li>Contact Us</li></a>
+                <a href="newsflash.html"><li>NewsFlash</li></a>
+                <a href="helpinghand.html"><li>Helping Hands</li></a>
+                <a href="abouut_us.html"><li>Wanna Find Us</li></a>
+                <a href="faq.html"><li>FAQ's</li></a>
+                <a href="feedback.html"><li>Your View</li></a>
+            </ul>
+        </nav>
+
+</header>
+
+<div class="container text-center" style="padding-top: 25px !important;padding-bottom: 25px !important;">
+	<h1 style="font-family: Montserrat;">Click on any red dot below to know more...</h1>
+</div>
+   	<div class="container" style="width: 900px !important;">
+
+		<img src="images/wm.jpg" usemap="#image-map" style="max-width: 100%;
+        max-height: 100%;
+        ">
+		<map name="image-map">
+      <area alt="India,Mumbai " title="India,Mumbai " href="India.html" coords="648,200,9" shape="circle">
+      <area alt="India,New Delhi" title="India,New Delhi" href="India.html" coords="658,164,9" shape="circle">
+      <area alt="Turkey,Ankara" title="Turkey,Ankara" href="Turkey.html" coords="509,118,8" shape="circle">
+      <area alt="Iran,Tehran" title="Iran,Tehran" href="Iran.html" coords="568,136,9" shape="circle">
+      <area alt="Egypt,Cairo" title="Egypt,Cairo" href="Egypt.html" coords="504,157,10" shape="circle">
+      <area alt="Nepal,Kathmandu" title="Nepal,Kathmandu" href="Nepal.html" coords="685,167,9" shape="circle">
+      <area alt="Thailand,Bangkok" title="Thailand,Bangkok" href="Thailand.html" coords="745,222,9" shape="circle">
+      <area alt="South Africa, Cape Town" title="South Africa, Cape Town" href="South_Africa.html" coords="464,408,7" shape="circle">
+      <area alt="Brazil,Brasilia" title="Brazil,Brasilia" href="Brazil.html" coords="237,335,11" shape="circle">
+      <area alt="United States,Chicago" title="United States,Chicago" href="US.html" coords="128,112,12" shape="circle">
+      <area alt="Cuba,Havana" title="Cuba,Havana" href="Cuba.html" coords="124,184,9" shape="circle">
+      <area alt="Argentina,Buenos Aries" title="Argentina,Buenos Aries" href="Argentina.html" coords="211,409,10" shape="circle">
+</map>
+	</div>
+	<footer class="container" style="padding-top: 25px !important;">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p>&copy; 2020 SarvJanHitay &middot;</p>
+  </footer>
+   </body>
+</html>

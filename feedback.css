@@ -1,0 +1,259 @@
+
+li {
+    list-style: none;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    background: url("https://eef96b699a090652d417-4cb4fb1426f507672e7f99f3dfb91794.ssl.cf1.rackcdn.com/6878755.jpg");
+}
+
+
+
+.menu {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.menu ul {
+    width: 100%;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    display: -webkit-flex;     /Chrome/
+    display: flex;         /Spec - Opera, Firefox/
+}
+
+
+
+.menu ul a {
+    width: 20%;
+    height: inherit;
+    color: white;
+    display: inline-block;
+    font-family: Montserrat;
+}
+.menu ul a:hover {
+    background-color: #222;
+    color: #fff;
+    text-decoration-line: none;
+}
+#menuToggle {
+    display: none;
+}
+.menu-icon {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        width: 100%;
+        height: auto;
+    }
+    .menu ul {
+        display: block;
+        max-height: 0;
+      overflow: hidden;
+      -webkit-transition: max-height 0.3s;
+      -moz-transition: max-height 0.3s;
+        -ms-transition: max-height 0.3s;
+        -o-transition: max-height 0.3s;
+      transition: max-height 0.3s;
+
+    }
+    .menu ul a {
+        text-align: left;
+        width: 100%;
+        height: 50px;
+        background-color: #449094;
+        padding: 10px 0px 10px 5%;
+        color: black !important;
+    }
+    .menu-icon {
+        width: 100px;
+        height: inherit;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: 60px;
+    }
+    #menuToggle:checked ~ ul {
+        max-height: 350px;
+
+    }
+    .menu-icon i {
+        font-size: 1.7em;
+    }
+    .menu ul a:hover {
+    background-color: #222;
+    color: white !important;
+    text-decoration-line: none;
+}
+}
+
+
+*{
+  margin:0;
+  padding:0;
+  overflow: hidden;
+}
+body{
+
+  background: url("https://content.thriveglobal.com/wp-content/uploads/2018/09/helping-hands.jpg") no-repeat center fixed;
+  align-items: center;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  justify-content: center;
+}
+.bg {
+  height: 100%;
+}
+.container{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+  width: 600px;
+  margin-top: 50px;
+  margin-left: 500px;
+  background-color: #ffffff;
+  border: 3px solid black;
+  opacity:0.8;
+  border-radius: 10px;
+}
+h2{
+  font-size: 40px;
+
+  font-family: 'Oswald', sans-serif;
+  user-select: none;
+  color: #000000;
+  text-transform: uppercase;
+}
+.form{
+  margin: 30px;
+  box-sizing: border-box;
+}
+h4{
+  color: black;
+}
+.user input{
+  width: 400px;
+  height: 30px;
+  margin-top: 5%;
+  border: none;
+  background: transparent;
+  border-bottom: 3px solid 		#808080;
+  font-size: 20px;
+  outline: none;
+}
+.username input{
+  width: 400px;
+  height: 30px;
+  margin-top: 3%;
+  border: none;
+  background: transparent;
+  border-bottom: 3px solid #808080;
+  font-size: 20px;
+  outline: none;
+}
+.user input::placeholder{
+  color: #222;
+}
+.username input::placeholder{
+  color: #222;
+}
+textarea{
+  width: 400px;
+  height: 200px;
+  margin: 50px;
+background-color: #ffffff;
+border: 3px solid black;
+opacity: 0.8;
+border-radius: 10px;
+  font-style: italic;
+  resize: none;
+  margin-top: 6%;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: 	black;
+}
+textarea::placeholder{
+  color: black;
+}
+.sub{
+  margin-top: 15%;
+  position: relative;
+}
+.sub input{
+  font-size: 20px;
+  width: 400px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #ffffff;
+  opacity:0.8;
+  border: 3px solid black;
+  color: black;
+  font-family: "Trirong", serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.sub .btn:hover{
+  background: #A04000 ;
+}
+.rating{
+  position: absolute;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.rating input{
+  display: none;
+}
+.rating label img{
+  width: 50px;
+}
+.rating label{
+  position: relative;
+  width: 0px;
+  height: 120px;
+  cursor: pointer;
+  transition: 0.5s;
+  filter: grayscale(1);
+  text-align: center;
+  opacity: 0;
+}
+.rating:hover label{
+  width: 100px;
+  opacity: 0.2;
+}
+.rating input:hover + label,
+.rating input:checked + label{
+  opacity: 1;
+  width: 100px;
+  filter: grayscale(0);
+}
+.rating label h4{
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(-50px) scale(0);
+  padding-top: 0px;
+  transition: 0.5s;
+}
+.rating input:hover + label h4,
+.rating input:checked + label h4{
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}

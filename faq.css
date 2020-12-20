@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #566573;
+}
+
+
+
+.menu {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.menu ul {
+    width: 100%;
+    height: inherit;
+    display: -webkit-flex;
+    display: flex;
+}
+
+
+
+.menu ul a {
+    width: 20%;
+    height: inherit;
+    color: white;
+    display: inline-block;
+    font-family: Montserrat;
+}
+.menu ul a:hover {
+    background-color: #222;
+    color: #fff;
+    text-decoration-line: none;
+}
+#menuToggle {
+    display: none;
+}
+.menu-icon {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        width: 100%;
+        height: auto;
+    }
+    .menu ul {
+        display: block;
+        max-height: 0;
+      overflow: hidden;
+      -webkit-transition: max-height 0.3s;
+      -moz-transition: max-height 0.3s;
+        -ms-transition: max-height 0.3s;
+        -o-transition: max-height 0.3s;
+      transition: max-height 0.3s;
+    }
+    .menu ul a {
+        text-align: left;
+        width: 100%;
+        height: 50px;
+        background-color: #449094;
+        padding: 10px 0px 10px 5%;
+        color: black !important;
+    }
+    .menu-icon {
+        width: 100px;
+        height: inherit;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: 60px;
+    }
+    #menuToggle:checked ~ ul {
+        max-height: 350px;
+
+    }
+    .menu-icon i {
+        font-size: 1.7em;
+    }
+    .menu ul a:hover {
+    background-color: #222;
+    color: white !important;
+    text-decoration-line: none;
+}
+}
+body{
+  background: url("https://covid19.lacounty.gov/wp-content/uploads/GettyImages-495855093.jpg") no-repeat center fixed;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+}
+
+.accordion {
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  opacity: 0.8;
+  margin: 50px auto;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.125);
+  font-family: 'Dancing Script' cursive;
+  padding: 30px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+h2{
+  text-align: center;
+}
+.accordion__label,
+.accordion__content {
+  padding: 10px 10px;
+}
+
+.accordion__label {
+  justify-content: center;
+  display: block;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.1s;
+}
+
+.accordion__label:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+
+.accordion__label::before{
+  content: "";
+  position: relative;
+  top: 12px;
+  right: 10px;
+  border: 8px solid black;
+  border-color: black transparent transparent transparent;
+  pointer-events: none;
+}
+
+.accordion__content {
+  background: #ffffff;
+  line-height: 1.6;
+  font-size: 0.85em;
+  display: none;
+}
+
+.accordion__input {
+  display: none;
+}
+
+.accordion__input:checked ~ .accordion__content {
+  display: block;
+}
+
+.accordion__input:checked ~ .accordion__label::after {
+  transform: translateY(-50%) rotate(0.5turn);
+}
+
+
+.cp{
+  padding-top: 24px;
+  margin-bottom: 20px;
+}
+.contact{
+  text-align: center;
+  padding-top: 4px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  color: #F7F9F9;
+  opacity: 0.8;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+footer p{
+  font-weight: bold;
+}
+
+#mansi{
+  background: #ffffff;
+  opacity: 0.8;
+  font-size: 20px;
+  border-radius: 21px 21px 21px 21px;
+  padding-top: 25px;
+  margin-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}

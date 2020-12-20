@@ -1,0 +1,160 @@
+body{
+  font-size: 50px !important;
+}
+
+
+
+.jumbotron {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 0;
+  background-image: url("images/comp_2.gif");
+  background-size: cover;
+  background-position: 0% 40%;
+
+}
+
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+
+}
+
+.jumbotron h1 {
+  font-weight: 500;
+
+}
+
+.jumbotron .container {
+  max-width: 50rem;
+  max-height: 500px !important;
+  padding-bottom: 150px;
+  padding-top: 100px;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+#c2{
+  padding-bottom: 30px;
+  padding-top: 10px;
+  font-size: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    z-index: 2;
+}
+
+#c3{
+  padding-bottom: 30px;
+  font-size: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+
+}
+
+
+.bounce{
+  -webkit-animation-name: bounce;
+    animation-name: bounce;
+  -webkit-animation-duration: .5s;
+    animation-duration: .9s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-tap-highlight-color: transparent;
+    height: 20px;
+    width: 20px;
+}
+
+@keyframes bounce{
+  0%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+      -webkit-transform: translateY(-5px);
+      transform: translateY(-5px);
+  }
+}
+
+.text1{
+  margin-bottom: 20px;
+}
+
+
+/*-------------------------------------------------------------------------------------------------------*/
+#man{
+  background-image:url(images/help.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 10px;
+  border-top: 10px;
+  position: relative;
+
+} 
+
+
+h2{
+  color: white !important;
+  font-family: Montserrat;
+  font-weight: bold;
+}
+
+
+
+.col-lg-4 img:hover{
+  transform: scale(1.38);
+  box-shadow: 0 5px 8px rosybrown;
+}
+
+
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+  color: white;
+  font-size: 15px;
+}
+
+
+a:hover {
+  color: #6b8a85 !important;
+  background-color: transparent;
+  text-decoration: underline;
+}
+

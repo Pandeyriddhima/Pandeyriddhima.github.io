@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>HelpHand</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="bootstrap-4.5.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <style>
+
+      body{
+        background:url(images/don.jpeg)no-repeat center fixed;
+        height: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: center;
+      }
+
+      .container {
+        max-width: 960px;
+      }
+
+      li {
+    list-style: none;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #449094;
+}
+
+
+
+.menu {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.menu ul {
+    width: 100%;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    display: -webkit-flex;     /*Chrome*/
+    display: flex;         /*Spec - Opera, Firefox*/
+}
+
+
+
+.menu ul a {
+    width: 20%;
+    height: inherit;
+    color: white;
+    display: inline-block;
+    font-family: Montserrat;
+}
+.menu ul a:hover {
+    background-color: #222;
+    color: #fff;
+    text-decoration-line: none;
+}
+#menuToggle {
+    display: none;
+}
+.menu-icon {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        width: 100%;
+        height: auto;
+    }
+
+    .menu ul {
+      display: block;
+      max-height: 0;
+      overflow: hidden;
+      -webkit-transition: max-height 0.3s;
+      -moz-transition: max-height 0.3s;
+      -ms-transition: max-height 0.3s;
+      -o-transition: max-height 0.3s;
+      transition: max-height 0.3s;
+    }
+
+    .menu ul a {
+        text-align: left;
+        width: 100%;
+        height: 50px;
+        background-color: #449094;
+        padding: 10px 0px 10px 5%;
+        color: black !important;
+    }
+
+    .menu-icon {
+        width: 100px;
+        height: inherit;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: 60px;
+    }
+
+    #menuToggle:checked ~ ul {
+        max-height: 350px;
+
+    }
+
+    .menu-icon i {
+        font-size: 1.7em;
+    }
+    .menu ul a:hover {
+    background-color: #222;
+    color: white !important;
+    text-decoration-line: none;
+}
+}
+
+    </style>
+  </head>
+  <body class="bg-light">
+    <header>
+      <nav class="menu">
+            <input type="checkbox" id="menuToggle">
+            <label for="menuToggle" class="menu-icon"><i class="fa fa-bars"></i></label>
+            <ul>
+                <a href="world.html" ><li>Our Family</li></a>
+                <a href="contact.html"><li>Contact Us</li></a>
+                <a href="newsflash.html" ><li>NewsFlash</li></a>
+                <a href="galleria.html" ><li>Galleria</li></a>
+                <a href="about_us.html"><li>Wanna Find Us</li></a>
+                <a href="faq.html"><li>FAQ's</li></a>
+                <a href="feedback.html"><li>Your View</li></a>
+            </ul>
+        </nav>
+
+</header>
+    <div class="container">
+  <div class="py-5 text-center">
+
+    <h2 style="font-weight: bold;font-family: Montserrat;">Share to Care</h2>
+    <p class="lead" style="font-weight:400 !important;font-family: Montserrat;">"No amount is big or small if it comes straight from the heart..."</p>
+  </div>
+
+  <div class="row">
+
+
+    <div class="col-md-8 order-md-1" style="font-family: Montserrat;">
+      <h3 class="mb-3" style="font-weight: bold;">Enter Details</h3>
+      <form class="needs-validation" novalidate action="index.html">
+
+        <div class="row">
+
+          <div class="col-md-6 mb-3">
+            <label for="firstName"style="font-weight: bold;" >First name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Valid first name is required.
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <label for="lastName" style="font-weight: bold;" >Last name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Valid last name is required.
+            </div>
+          </div>
+
+        </div>
+
+        <div class="mb-3">
+          <label for="username" style="font-weight: bold;" >Username</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">@</span>
+            </div>
+            <input type="text" class="form-control" id="username" placeholder="Username" required>
+            <div class="invalid-feedback" style="width: 100%;">
+              Your username is required.
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="email" style="font-weight: bold;">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="you@example.com">
+          <div class="invalid-feedback">
+            Please enter a valid email address.
+          </div>
+        </div>
+
+
+
+        <div class="row">
+          <div class="col-md-5 mb-3">
+          <label for="email" style="font-weight: bold;">Country</label>
+          <input type="text" class="form-control" id="country">
+          <div class="invalid-feedback">
+            Please enter a valid country name.
+          </div>
+        </div>
+
+        <div class=" col-md-5 mb-3">
+          <label for="email" style="font-weight: bold;">State</label>
+          <input type="text" class="form-control" id="state">
+          <div class="invalid-feedback">
+            Please enter a valid state name.
+          </div>
+        </div>
+
+          <div class="col-md-3 mb-3">
+            <label for="zip"style="font-weight: bold;">Zip</label>
+            <input type="text" class="form-control" id="zip" placeholder="" required>
+            <div class="invalid-feedback">
+              Zip code required.
+            </div>
+          </div>
+        </div>
+
+        <hr class="mb-4">
+
+        <h3 class="mb-3">Payment</h3>
+
+        <div class="d-block my-3">
+          <div class="custom-control custom-radio">
+            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+            <label class="custom-control-label" for="credit" style="font-weight: bold;">Credit card</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+            <label class="custom-control-label" for="debit" style="font-weight: bold;">Debit card</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+            <label class="custom-control-label" for="paypal" style="font-weight: bold;">GooglePay</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="cc-name" style="font-weight: bold;">Name on card</label>
+            <input type="text" class="form-control" id="cc-name" placeholder="" required>
+            <small class="text-muted">Full name as displayed on card</small>
+            <div class="invalid-feedback">
+              Name on card is required
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="cc-number" style="font-weight: bold;">Credit card number</label>
+            <input type="text" class="form-control" id="cc-number" placeholder="" required>
+            <div class="invalid-feedback">
+              Credit card number is required
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 mb-3">
+            <label for="cc-expiration" style="font-weight: bold;">Expiration</label>
+            <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+            <div class="invalid-feedback">
+              Expiration date required
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="cc-cvv" style="font-weight: bold;">CVV</label>
+            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+            <div class="invalid-feedback">
+              Security code required
+            </div>
+          </div>
+        </div>
+        <hr class="mb-4">
+        <button class="btn btn-primary btn-lg btn-block" type="submit" style="color: white; background-color: #52cde3;border-color:#52cde3 ">Submit</button>
+
+      </form>
+    </div>
+  </div>
+
+  <footer class="container" style="margin-bottom: 15px !important;margin-left: 10px !important;margin-right: 50px !important;margin-top: 20px !important; font-weight: bold;">
+
+    <p>&copy; 2020 SarvJanHitay &middot;</p>
+  </footer>
+</div>
+
+      </body>
+</html>
